@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/nextUpArtistsTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/actionbar_title_size" />
+
+        <Button
+            android:id="@+id/nextUpBackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon" />
+    </RelativeLayout>
+
+    <FrameLayout xmlns:app="utility.imaginet.com.judgeme.ui.CommonNextUpActivity"
+        xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1.32"
+        android:background="#000000">
+
+        <SurfaceView
+            android:id="@+id/circlesurfaceVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+
+        <utility.imaginet.com.judgeme.helper.CircleOverlayView
+            android:id="@+id/CircleOverlayView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <com.triggertrap.seekarc.SeekArc
+            android:id="@+id/seekArc1"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:padding="25dp"
+            app:arcWidth="0dp"
+            app:progressWidth="3dp"
+            seekarc:arcColor="#00000000"
+            seekarc:clockwise="true"
+            seekarc:enabled="false"
+            seekarc:progressColor="@color/purple"
+            seekarc:startAngle="0"
+            seekarc:touchInside="false" />
+
+        <TextView
+            android:id="@+id/playbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/play_button"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pausebutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/pause_button"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/commondialogProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress_circle"
+            android:max="100"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/seekArcProgress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#EFE2E9"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nextUpTitleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/content_text_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/nextUpDislikeTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/dislike_button" />
+
+                    <TextView
+                        android:id="@+id/nextUpDislikeView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/dislike_disabled_button"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/nextUpLikeTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/like_button" />
+
+                    <TextView
+                        android:id="@+id/nextUpLikeView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/like_disabled_button"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/nextUpDislikeCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commonNextUpShareTextView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/share_clip_button" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/nextUpLikeCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

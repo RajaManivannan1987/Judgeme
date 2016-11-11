@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".05">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/worldLayout"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/rectangle_linearlayout_style"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/worldImageView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/countryLayout"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/rectangle_linearlayout_style"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/countryImageView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/statedLayout"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/rectangle_linearlayout_style"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/stateImageView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cityLayout"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/rectangle_linearlayout_style"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/cityImageView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="5dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Artist Gender"
+                    android:textColor="@color/purple" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="45dp">
+
+                    <RadioGroup
+                        android:id="@+id/genderRadioGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/maleRadioButton"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/feMaleRadioButton"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="Female" />
+
+                        <RadioButton
+                            android:id="@+id/anyRadioButton"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="All" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Artist Age"
+                    android:textColor="@color/purple" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="45dp">
+
+                    <RadioGroup
+                        android:id="@+id/ageRadioGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/kidsRadioGroup"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kid" />
+
+                        <RadioButton
+                            android:id="@+id/adultRadioGroup"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="Adult" />
+
+                        <RadioButton
+                            android:id="@+id/anyageRadioGroup"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="All" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="Genre"
+                    android:textColor="@color/purple" />
+
+                <GridView
+                    android:id="@+id/artistsGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:columnWidth="70dp"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="5dp"></GridView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".99"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/SelectCheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textSize="@dimen/content_text_size_small" />
+    </LinearLayout>
+</LinearLayout>

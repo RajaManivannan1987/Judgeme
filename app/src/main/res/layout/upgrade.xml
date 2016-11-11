@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f1f1f1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/upGradeArtistNameText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:text="UpGrade"
+                    android:textSize="@dimen/actionbar_title_size" />
+
+                <Button
+                    android:id="@+id/upGrade_backButton"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/back_icon"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/upGradeSetZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/upGrade_accounterName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:textColor="@color/purple" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/upGrade_UserImageView"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circler"
+                    android:src="@drawable/no_user_icon"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:id="@+id/upGrade_followsTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/purple" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Your Current Account is" />
+
+                <TextView
+                    android:id="@+id/upGrade_accountType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/content_text_size" />
+
+                <TextView
+                    android:id="@+id/upGrade_activeClipsTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Your Current Account is"
+                    android:textSize="@dimen/content_text_size_small" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#d3d3d3" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="UpGrade to:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/upGrade_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/purple"
+                    android:gravity="left|center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/upGrade_premiumTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/content_text_size_small" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/upGrade_Button"
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:text="UpGrade" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

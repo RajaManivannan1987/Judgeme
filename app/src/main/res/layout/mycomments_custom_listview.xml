@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/myComment_LinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myCommentArtistName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/rose" />
+
+            <TextView
+                android:id="@+id/myCommentTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/commentsReadImageView"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".2"
+            android:background="@drawable/comments_icon"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="3dp"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_marginEnd="3dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/backgroundLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".3"
+            android:src="@drawable/list_move_icon" />
+
+        <LinearLayout
+            android:id="@+id/mainLinear"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="2.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myprofile_clip_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="#e53173"
+                android:textSize="@dimen/content_text_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/likes_icon" />
+
+                <TextView
+                    android:id="@+id/myprofile_clips_like_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="3dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/myprofile_clips_delete_button"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".3"
+            android:src="@drawable/minus_icon" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/judgemeImageView"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:background="@drawable/judgeme_logo" />
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/judgemeImageView"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/logo_caption_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".99"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Copyright (c) 2015 JudgeMe. All rights reserved."
+                android:textSize="@dimen/content_text_size_small" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

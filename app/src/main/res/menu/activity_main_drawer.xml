@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Preferences"
+            android:icon="@drawable/preferences_menu_icon"
+            android:title="Preferences" />
+        <item
+            android:id="@+id/nav_Next_Up"
+            android:icon="@drawable/next_up_icon"
+            android:title="Next Up" />
+        <item
+            android:id="@+id/nav_Trending_Clips"
+            android:icon="@drawable/trending_clips_menu_icon"
+            android:title="Trending Clips" />
+        <item
+            android:id="@+id/nav_Trending_Artists"
+            android:icon="@drawable/trending_artists_menu_icon"
+            android:title="Trending Artists" />
+        <item
+            android:id="@+id/nav_Discussions"
+            android:icon="@drawable/discussions_menu_icon"
+            android:title="Discussions" />
+        <item
+            android:id="@+id/nav_Likes"
+            android:icon="@drawable/likes_menu_icon"
+            android:title="Likes" />
+        <item
+            android:id="@+id/nav_My_Profile"
+            android:icon="@drawable/my_profile_menu_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_Help"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Help" />
+
+
+    </group>
+
+    <!-- <item android:title="Communicate">
+         <menu>
+             <item
+                 android:id="@+id/nav_share"
+                 android:icon="@android:drawable/ic_menu_share"
+                 android:title="Share" />
+             <item
+                 android:id="@+id/nav_send"
+                 android:icon="@android:drawable/ic_menu_send"
+                 android:title="Send" />
+         </menu>
+     </item>-->
+
+</menu>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Judgeme</string>
+    <string name="pref">Preferences</string>
+    <string name="nextup">NextUp</string>
+    <string name="trendingclips">Trending Clips</string>
+    <string name="trendingartists">Trending Artists</string>
+    <string name="myprofile">My Profile</string>
+    <string name="likes">My Likes</string>
+    <string name="discussion">Comments</string>
+    <string name="google_app_id">judgeme-1253</string>
+    <string name="in_app_id">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtpZ56il3ppNBFiI3zC8UHH+9SMLtCEhH7YdpBNp6i4OsKzHBtAok461UfykcDgc4M7UV5nCSeMAnRyxuR2Ia9CbkojGw8ztNYypbL0cQxn85eWToAQia74DzVoQ+8KdoQEtS1Yc/+bAYgGbP60AVYnZ6eAmP5HrHSfzwInr3TPhrDI/WvBZWg7p3mMSr1H7Hczi5iZO6AKL4UOhZfATfl9TEMYwANSjNDRDDOTWmHJnlUkc5cxb0D5KxEw+5T5V7Crr8zY/MiiXKAorei9fjILNCN2Er7SRnCDCXMGUfpY68WuG6tR2DnKZKOCsFg3oFPHVF86Iz+X/mbG7p9aP7BQIDAQAB</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Logout</string>
+    <!--<string name="app_id">920242541383851</string>-->
+    <!-- <string name="app_id">1001029003282994</string>-->
+    <string name="app_id">1467989450182028</string>
+
+    <array name="dummy_items">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+    </array>
+    <array name="main_items">
+        <item>List - Basic Drag and Swipe</item>
+        <item>Grid - Basic Swipe</item>
+    </array>
+</resources>

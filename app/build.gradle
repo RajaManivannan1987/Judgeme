@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "utility.imaginet.com.judgeme"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 7
+        versionName "1.6"
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/drawable-hdpi', 'src/main/res/drawable-mdpi', 'src/main/res/anim']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+}
+repositories {
+    maven {
+        url "https://jitpack.io"
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':mm-ad-sdk')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.github.woxthebox:draglistview:1.1.9'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.github.Triggertrap:SeekArc:v1.1'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.android.support:multidex:1.0.0'
+}

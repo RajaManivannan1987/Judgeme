@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/commentTitleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/actionbar_title_size" />
+
+        <Button
+            android:id="@+id/commentBackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainRelativeLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist Details"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/content_text_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mycomment_UserImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/comments_artist_Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/rose"
+                    android:textSize="@dimen/content_text_size" />
+
+                <TextView
+                    android:id="@+id/comments_update_Time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/comments_LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                android:paddingBottom="50dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d3d3d3">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/comment_EditText"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.75"
+                android:background="#ffffff"
+                android:hint="Type a comments"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/submit_comment_Button"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/comments_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

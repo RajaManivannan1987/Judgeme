@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="?attr/colorPrimary"
+             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+             app:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+             <TextView
+                 android:id="@+id/toolbar_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:textColor="@color/purple"
+                 android:textSize="16sp" />
+         </android.support.v7.widget.Toolbar>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!-- <include layout="@layout/fragment_nextup" ></include>-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textclick"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/app_icon"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:paddingRight="35dp"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/actionbar_title_size" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/logoutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="7dp"
+            android:layout_toStartOf="@+id/relativeLayout"
+            android:background="@android:drawable/ic_menu_help"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:textColor="@color/purple"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--<include layout="@layout/main_nextup_activity" />-->
+    <FrameLayout
+        android:id="@+id/Main_frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" />
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" />
+
+</android.support.design.widget.CoordinatorLayout>

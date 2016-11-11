@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f2"
+    tools:context=".MyProfileFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/myProfileUserNameTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/content_text_size" />
+
+                <ImageView
+                    android:id="@+id/myProfilesetZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ToggleButton
+                            android:id="@+id/youtubebutton"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/youtube_toggle"
+                            android:gravity="left"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <TextView
+                            android:id="@+id/youtubeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/myProfileUserImageView"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/circler"
+                            android:src="@drawable/no_user_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/upgradLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/accountTypeImageView"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/novice_icon" />
+
+                        <TextView
+                            android:id="@+id/myProfileAcounttypeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/myProfileFollowsTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/purple" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/videoviewCapture"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Add"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noClipsTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Please add a clips"
+                android:textColor="@color/rose"
+                android:textSize="@dimen/actionbar_title_size"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
